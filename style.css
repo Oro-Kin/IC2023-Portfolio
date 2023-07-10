@@ -1,4 +1,161 @@
+html {
+    background-image: url("img_files/Wood_background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow:hidden;
+}
 
+  /*Dropdown / Table of contents styling (including page 1)*/
+.toc {
+    height:30px;
+    width:30px;
+    position:fixed;
+    background-image: url("img_files/toc_button_trnslct2.png");
+    background-size: 30px 30px;
+    right:20px;
+    top:20px;
+    display: inline-block;
+}
 
+.toc_content {
+    background-color: #d8c494;
+    border:3px solid;
+    border-color: black;
+    display:none;
+    position:absolute;
+    min-width: 100px;
+    z-index:1;
+    right:10px;
+    top:10px;
+}
 
+.toc_content a{
+    color:black;
+    padding:12px 16px;
+    display:block;
+}
 
+.toc:hover .toc_content {
+    display:block;
+}
+
+.tblcntnts a {
+    color:inherit;
+    text-decoration: none;
+}
+
+.right_page_toc_all {
+    display: flex;
+    flex-direction: row;
+}
+
+.right_page_toc_all h2 {
+    text-decoration: underline;
+    
+}
+
+.right_page_toc1 {
+    display:flex;
+    flex-direction: column;
+    margin-top:25%;
+    transform: rotate(1deg);
+}
+
+.right_page_toc2 {
+    display:flex;
+    flex-direction: column;
+    margin-top: 50%;
+    padding-left: 21px;
+    transform: rotate(2deg);
+}
+
+/*Universal styling for the book and contents*/
+.openBook {
+    height: 725px;
+    width:auto;
+    margin-left: 150px;
+    transform:rotate(12deg);
+    display:block;
+    
+}
+
+.placeholder {
+    position:relative;
+    display:inline-block;
+    top:-40px
+}
+
+.left_page {
+    position: absolute;
+    top: 10%;
+    left: 38%;
+    transform:translate(-10%,-35%) rotate(12deg);
+    color:black; 
+}
+
+.right_page {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform:translate(-50%,-75%) rotate(12deg);
+       
+}
+
+.pageturnani {
+    position: absolute;
+    background-color: blue;
+    height: 1000px;
+    width: 1500px;
+    z-index: 99;
+    margin: -10px;
+    display: none;
+}
+
+/*Styling for page 1*/
+
+.firstpage_left{
+    transform: translate(-20%, 40%) rotate(1.2deg);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 55%;
+}
+
+.firstpage_left h2 {
+    text-decoration: underline;
+}
+
+#profile_pic {
+    height: 200px;
+    width:160px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*Styling for gallery*/
+
+.galleryIMG {
+    height: 150px;
+    width: 112.5px;
+    margin: 5px;
+    border:2px solid black;
+}
+
+.rightGallery {
+    width:400px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#gallery_right_page {
+    transform: translate(5%, 29%) rotate(0.5deg);
+}
+
+#gallery_left_page h3 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+#gallery_left_page {
+    transform: translate(0%, 0%) rotate(0deg);
+}
