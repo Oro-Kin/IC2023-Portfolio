@@ -132,6 +132,21 @@ html {
     margin-right:auto;
 }
 
+/*Styling for My skills and hobbies page*/
+
+#skillnhobby {
+    transform: translate(0%, 40%) rotate(0deg);
+}
+
+#skillnhobby_contnent {
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    
+}
+
+
 /*Styling for gallery*/
 
 .galleryIMG {
