@@ -138,14 +138,44 @@ html {
     transform: translate(0%, 40%) rotate(0deg);
 }
 
+#skillnhobby h2 {
+    text-decoration: underline;
+}
+
 #skillnhobby_contnent {
     text-align: center;
     display:flex;
     flex-direction: column;
     width:50%;
-    
+    transform: translate(-15%, 0%) rotate(1deg);
 }
 
+/*Styling for Experience and Certs*/
+
+#experience{
+    transform: translate(0%, 40%) rotate(0.3deg);
+}
+
+#experience h2 {
+    text-decoration: underline;
+}
+
+#experience_content {
+    width:75%;
+    transform: translate(-15%,0%);
+}
+
+#certs {
+    transform: translate(0%,-60%) rotate(0.3deg);
+}
+
+#certs h2 {
+    text-decoration: underline;
+}
+
+#cert_content {
+    width:300px;
+}
 
 /*Styling for gallery*/
 
@@ -173,4 +203,14 @@ html {
 
 #gallery_left_page {
     transform: translate(0%, 0%) rotate(0deg);
+}
+
+/*Styling for acknowledgements*/
+
+#akndmts {
+    transform: translate(0%, 0%) rotate(0.3deg);
+}
+
+#akndmts h2{
+    text-decoration: underline;
 }
