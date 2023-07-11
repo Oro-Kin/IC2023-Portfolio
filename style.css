@@ -103,11 +103,11 @@ html {
 
 .pageturnani {
     position: absolute;
-    background-color: blue;
-    height: 1000px;
-    width: 1500px;
+    height: 725px;
+    width:auto;
+    margin-left: 150px;
+    transform:translate(0%,-5%) rotate(12deg);
     z-index: 99;
-    margin: -10px;
     display: none;
 }
 
@@ -148,6 +148,20 @@ html {
     flex-direction: column;
     width:50%;
     transform: translate(-15%, 0%) rotate(1deg);
+}
+
+#my_stuffs {
+    transform: translate(0%,0%) rotate(0.3deg);
+    color: black;
+}
+
+#my_stuffs h2 {
+    text-decoration: underline;
+}
+
+#my_stuffs_content {
+    text-decoration: none;
+    color: black;
 }
 
 /*Styling for Experience and Certs*/
@@ -203,6 +217,39 @@ html {
 
 #gallery_left_page {
     transform: translate(0%, 0%) rotate(0deg);
+}
+
+.modal {
+    display:none;
+    position: fixed;
+    z-index:1;
+    padding-top:100px;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.model-content {
+    margin:auto;
+    display:block;
+    height: 90%;
+    max-height:700px;
+}
+
+.close {
+    position: absolute;
+    top:15px;
+    right:35px;
+    color: #f1f1f1;
+    font-size: 40px;
+}
+
+.close:hover, .close:focus {
+    color:#bbb;
+    text-decoration: none;
 }
 
 /*Styling for acknowledgements*/

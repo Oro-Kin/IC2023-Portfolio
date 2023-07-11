@@ -1,7 +1,4 @@
-let chapterOneLink = document.querySelector(".chapter1");
-let chapterTwoLink = document.querySelector(".chapter2");
-let chapterThreeLink = document.querySelector(".chapter3");
-let chapterFourLink = document.querySelector(".chapter4");
+
 
 
 
@@ -41,4 +38,20 @@ function chapterTwo1() {
     console.log("test-1");
     let pageAnimation = document.querySelector(".pageturnani")
     pageAnimation.style.display= "inline-flex";
+}
+
+//Gallery Junk//
+
+
+let modal = document.querySelector(".modal");
+let img1 = document.querySelector("#1/9i");
+let modalImg1 =document.querySelector("#1/9");
+img1.onclick = function(){
+    modal.style.display= "block";
+    modalImg1.src = this.src;
+}
+
+let span = document.querySelector(".close");
+span.onclick = function() {
+    modal.style.display = "none";
 }
